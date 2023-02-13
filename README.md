@@ -66,7 +66,10 @@ HTML, CSS, NodeJS
 
 ### Key Features <a name="key-features"></a>
 
-- Linter is a tool to help you improve your code, it analizes the source code looking for problems.
+- Refactoring JS code to use classes.
+  - Use JavaScript classes instead of objects and arrays.
+  
+- Styled UI.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,7 +161,11 @@ Deployed using Github Pages.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Integrating Google Analitics
+- Implement Navigation bar.
+- Three content sections:
+  - Books list.
+  - Add book form.
+  - Contact info.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -203,7 +210,7 @@ I would like to thank Microverse for offering me this opportunity to learn, and 
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/codedit334/Module2-Awsome-Books/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/codedit334/Modude2-Awsome-Books/blob/main/LICENSE) licensed.
 (Check the LICENSE file)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
