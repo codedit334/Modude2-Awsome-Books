@@ -5,27 +5,77 @@
 }
 
 .main-section {
-  width: 50%;
   margin: auto;
 }
 
 .books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 40px;
   margin-left: 5px;
 }
 
-.book-list {
-  list-style: none;
-}
-
-.book-list li {
-  margin-top: 20px;
+.books h1 {
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .book-list button {
   margin: 10px 0;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin: 0 auto;
+}
+
+form h2 {
+  margin-bottom: 20px;
+}
+
 form input {
-  margin-top: 20px;
+  padding: 5px;
+  width: 100%;
+  border: 2px solid #ccc;
+}
+
+form input[type='submit'] {
+  width: unset;
+  align-self: flex-end !important;
+  box-shadow: 1px 1px 2px 2px #ccc;
+}
+
+.book-list {
+  list-style: none;
+  border: 3px solid #ccc;
+  width: 50%;
+}
+
+.book-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-list li:nth-of-type(odd) {
+  background-color: #eee;
+}
+
+.book-list li button {
+  margin: 0 10px;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  padding: 0 5px;
+}
+
+.book-list li div {
+  padding: 5px;
+}
+
+.horizontal-line {
+  width: 50%;
+  margin: 30px auto;
 }
