@@ -1,13 +1,13 @@
-const bookTitleInput = document.querySelector("#form-title");
-const bookDescInput = document.querySelector("#form-desc");
-const bookAddInput = document.querySelector("#form-add");
-const booksContainer = document.querySelector(".book-list");
+const bookTitleInput = document.querySelector('#form-title');
+const bookDescInput = document.querySelector('#form-desc');
+// const bookAddInput = document.querySelector('#form-add');
+const booksContainer = document.querySelector('.book-list');
 
 let booksArr = [];
-let bookObj = {};
+const bookObj = {};
 
 const getBooks = () => {
-  const books = localStorage.getItem("books");
+  const books = localStorage.getItem('books');
   if (books) {
     booksArr = JSON.parse(books);
   }
@@ -23,24 +23,25 @@ const renderBooks = () => {
   <button class="remove_book">Remove</button>
   <hr>
 </li>
-`
+`,
   );
-  booksContainer.innerHTML = booksHTML.join("");
+  booksContainer.innerHTML = booksHTML.join('');
 
-};
-
-const addRemoveEvent = () => {
-  const removeButtons = document.querySelectorAll(".remove_book");
-  if (removeButtons)
+  const removeButtons = document.querySelectorAll('.remove_book');
+  if (removeButtons) {
     removeButtons.forEach((button) => {
-      button.addEventListener("click", (event) => {
+      button.addEventListener('click', (event) => {
         event.preventDefault();
-        console.log('clicked')
         getBooks();
-        removeBook(event.target.parentNode.dataset.id);
+        booksArr = booksArr.filter(
+          (book) => parseInt(book.id, 10) !== parseInt(event.target.parentNode.dataset.id, 10),
+        );
+        localStorage.setItem('books', JSON.stringify(booksArr));
+        renderBooks();
       });
     });
-}
+  }
+};
 
 const addBook = () => {
   if (bookTitleInput.value.length !== 0 && bookTitleInput.value.length !== 0) {
@@ -48,25 +49,15 @@ const addBook = () => {
     bookObj.title = bookTitleInput.value;
     bookObj.desc = bookDescInput.value;
     booksArr.push(bookObj);
-    localStorage.setItem("books", JSON.stringify(booksArr));
+    localStorage.setItem('books', JSON.stringify(booksArr));
   }
   renderBooks();
-  addRemoveEvent();
-}
-
-const removeBook = (bookId) => {
-  booksArr= booksArr.filter((book) => parseInt(book.id) !== parseInt(bookId));
-  localStorage.setItem("books", JSON.stringify(booksArr));
-  renderBooks();
-  addRemoveEvent()
 };
 
 window.onload = () => {
   renderBooks();
-  addRemoveEvent();
-  document.querySelector(".form-add").addEventListener("click", (event) => {
+  document.querySelector('.form-add').addEventListener('click', (event) => {
     event.preventDefault();
     addBook();
   });
-
 };
