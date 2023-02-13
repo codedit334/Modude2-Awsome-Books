@@ -15,7 +15,6 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
-  - [🎥 Video Description](#video-description)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -33,7 +32,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Capstone Project 1] <a name="about-project"></a>
+# 📖 Awesome Books <a name="about-project"></a>
 
 Awesome Books is a simple web app that stores books.
 
