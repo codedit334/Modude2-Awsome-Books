@@ -2,8 +2,7 @@
 
 <div align="center">
 
-  <h3><b>All In Campsters</b></h3>
-  <h4>Module 1: Capstone Project</h4>
+  <h3><b>Module 2: Awesome Books</b></h3>
 
 </div>
 
@@ -36,7 +35,7 @@
 
 # 📖 [Capstone Project 1] <a name="about-project"></a>
 
-All In Campsters is my opportunity to put what i've learned during module 1 in practice.
+Awesome Books is a simple web app that stores books.
 
 ## 🛠 Built With <a name="built-with"></a>
 HTML, CSS, NodeJS
@@ -68,11 +67,7 @@ HTML, CSS, NodeJS
 
 ### Key Features <a name="key-features"></a>
 
--Linter is a tool to help you improve your code, it analizes the source code looking for problems.
-
--Mobile first design: it's addapted to mobile screens.
-
--Dynamic HTML: Write HTML Code using JavaScript.
+- Linter is a tool to help you improve your code, it analizes the source code looking for problems.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,17 +75,10 @@ HTML, CSS, NodeJS
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
--Link: [https://codedit334.github.io/Module1_Capstone-Project/index.html](https://codedit334.github.io/Module1_Capstone-Project/index.html).
+- [Link](https://codedit334.github.io/Modude2-Awsome-Books/) to the live project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- VIDEO DESCRIPTION -->
-
-## 🎥 Video Description <a name="video-description"></a>
-
--Here is the [video](https://www.loom.com/share/b4c088c829ef462fa65b03153d6aaa35) description of the project.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -112,13 +100,13 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 ```sh
   cd my-folder
-  git clone git@github.com/codedit334/Module1_Capstone-Project.git
+  git clone git@github.com/codedit334/Module2-Awsome-Books.git
 ```
 ### Install
 
 Install this project with:
 ```sh
-  cd Module1_Capstone-Project
+  cd Module2-Awsome-Books
   npm install
 ```
 
@@ -156,11 +144,15 @@ Deployed using Github Pages.
 
 👤 Author1
 
-- GitHub: [@codedit334 ](https://github.com/codedit334)
+- GitHub: [@codedit334](https://github.com/codedit334)
 - Twitter: [@oussedit](https://twitter.com/oussedit)
 - LinkedIn: [Oussama Elabdioui](https://www.linkedin.com/in/oussama-elabdioui-4677a41b6/)
 
+👤 Author2
 
+- GitHub: [@ZewdieMc](https://github.com/ZewdieMc)
+- Twitter: [@HabtieZewdie](https://twitter.com/HabtieZewdie)
+- LinkedIn: [Zewdie Habtie](https://linkedin.com/in/zewdie-habtie-sisay-947153172)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -206,17 +198,13 @@ I would like to thank Microverse for offering me this opportunity to learn, and 
 
   - The use of linters helps to diagnose and fix technical issues, also linters can help teams achieve a more readable and consistent style, through the enforcement of its rules.
 
--Why use dynamic HTML: 
-
-  - Using dynamic HTML Avoids writing repetetive code, thanks to JS loops.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/codedit334/Module1_Capstone-Project/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/codedit334/Module2-Awsome-Books/blob/main/LICENSE) licensed.
 (Check the LICENSE file)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
