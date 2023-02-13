@@ -1,6 +1,5 @@
 const bookTitleInput = document.querySelector('#form-title');
 const bookDescInput = document.querySelector('#form-desc');
-// const bookAddInput = document.querySelector('#form-add');
 const booksContainer = document.querySelector('.book-list');
 
 let booksArr = [];
