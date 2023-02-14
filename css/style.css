@@ -41,6 +41,7 @@ nav {
 
 .active {
   color: #448dee;
+  font-weight: bold;
 }
 
 .logo {
