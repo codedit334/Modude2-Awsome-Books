@@ -17,9 +17,13 @@ nav {
   margin: auto;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .date-div {
   width: 95%;
-  margin: auto;
+  margin: 10px auto 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -31,6 +35,14 @@ nav {
   margin-right: 20px;
 }
 
+.menu li {
+  cursor: pointer;
+}
+
+.active {
+  color: #448dee;
+}
+
 .logo {
   margin-left: 20px;
 }
@@ -39,11 +51,14 @@ nav {
   margin: auto;
 }
 
+section {
+  padding-top: 40px;
+}
+
 .books {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
   margin-left: 5px;
 }
 
@@ -116,13 +131,13 @@ form input[type='submit'] {
 }
 
 /* Contact */
-#contact-section {
+.contact-section {
   display: grid;
   place-items: center;
   gap: 15px;
 }
 
-#contact-section h6 {
+.contact-section h6 {
   margin-left: 15px;
   font-size: 100%;
   font-weight: 300;
