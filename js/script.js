@@ -75,34 +75,25 @@ window.onload = () => {
   document.querySelector('.date-div').textContent = new Date().toDateString();
 };
 
-// list items
 const navList = document.querySelector('.nav-list');
 const navAdd = document.querySelector('.nav-add');
 const navContact = document.querySelector('.nav-contact');
 
-navList.addEventListener('click', () => {
-  navList.classList.add('active');
-  navAdd.classList.remove('active');
-  navContact.classList.remove('active');
-  document.querySelector('.book-section').classList.remove('hidden');
-  document.querySelector('.add-book-section').classList.add('hidden');
-  document.querySelector('.contact-section').classList.add('hidden');
+const spaDisplay = (event) => {
+  document.querySelectorAll(`.menu li:not(${event.target.classList[0]})`).forEach((li) => li.classList.remove('active'));
+  event.target.classList.add('active');
+  document.querySelector(`.${event.target.dataset.target}`).classList.remove('hidden');
+  document.querySelectorAll(`section:not(.${event.target.dataset.target})`).forEach((section) => section.classList.add('hidden'));
+};
+
+navList.addEventListener('click', (event) => {
+  spaDisplay(event);
 });
 
-navAdd.addEventListener('click', () => {
-  navAdd.classList.add('active');
-  navList.classList.remove('active');
-  navContact.classList.remove('active');
-  document.querySelector('.book-section').classList.add('hidden');
-  document.querySelector('.add-book-section').classList.remove('hidden');
-  document.querySelector('.contact-section').classList.add('hidden');
+navAdd.addEventListener('click', (event) => {
+  spaDisplay(event);
 });
 
-navContact.addEventListener('click', () => {
-  navContact.classList.add('active');
-  navAdd.classList.remove('active');
-  navList.classList.remove('active');
-  document.querySelector('.book-section').classList.add('hidden');
-  document.querySelector('.add-book-section').classList.add('hidden');
-  document.querySelector('.contact-section').classList.remove('hidden');
+navContact.addEventListener('click', (event) => {
+  spaDisplay(event);
 });
