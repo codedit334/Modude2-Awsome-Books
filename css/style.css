@@ -4,6 +4,37 @@
   box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    border: 3.5px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 95%;
+    margin: auto;
+}
+
+.date-div {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
 .main-section {
   margin: auto;
 }
@@ -48,11 +79,13 @@ form input[type='submit'] {
   align-self: flex-end !important;
   box-shadow: 1px 1px 2px 2px #ccc;
 }
-
+.form-add:hover {
+    background-color: #ccc;
+}
 .book-list {
   list-style: none;
   border: 3px solid #ccc;
-  width: 50%;
+  width: 95%;
 }
 
 .book-list li {
@@ -78,4 +111,34 @@ form input[type='submit'] {
 .horizontal-line {
   width: 50%;
   margin: 30px auto;
+}
+
+/* Contact */
+#contact-section {
+    display: grid;
+    place-items: center;
+    gap: 15px;
+}
+
+#contact-section h6 {
+    margin-left: 15px;
+    font-size: 100%;
+    font-weight: 300;
+}
+
+.contact-info{
+    margin: 15px 0 0 50px;
+
+}
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+}
+footer span {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    border: 3.5px solid #ccc;
+    padding: 10px;
 }
